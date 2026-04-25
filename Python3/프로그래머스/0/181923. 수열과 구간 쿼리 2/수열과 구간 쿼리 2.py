@@ -1,9 +1,6 @@
 def solution(arr, queries):
     answer = []
-    for i in range(len(queries)):
-        s = queries[i][0]
-        e = queries[i][1]
-        k = queries[i][2]
+    for s, e, k in queries:
         list = arr[s:e+1]
         k_big_list = []
         for j in list:
